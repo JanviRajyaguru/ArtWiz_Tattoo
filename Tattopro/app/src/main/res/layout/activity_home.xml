@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/white"
+    >
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/c"
+        android:id="@+id/img1"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:src="@drawable/p"
+        android:id="@+id/img2"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/img1"/>
+
+    <ImageButton
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:src="@drawable/b"
+        android:layout_below="@+id/img2"
+        android:scaleType="fitCenter"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:id="@+id/btnlist"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="40sp"
+            android:src="@drawable/baseline_home_24" />
+
+
+        <ImageButton
+            android:id="@+id/galary"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="120sp"
+            android:layout_toRightOf="@id/home"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:src="@drawable/gall" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/galary"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="110sp"
+            android:src="@drawable/baseline_person_24" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
